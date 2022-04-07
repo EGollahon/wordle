@@ -17,12 +17,8 @@ function App() {
         generateAnswer();
     }, [generateAnswer])
 
-    const handleKeyPress = (event) => {
-        console.log(event.key);
-    }
-
     return (
-      <div className="App" onKeyPress={handleKeyPress}>
+      <div className="App">
         <div id="alert">Sample alert</div>
         <Guesses/>
         <Keys/>
